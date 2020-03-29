@@ -1,0 +1,35 @@
+@import '../../styles/colors';
+
+.register-bg {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+	align-items: flex-start;
+
+	@media (min-width: 576px) {
+		background-position-x: right;
+	}
+	@media (min-width: 768px) {
+		background-position-x: center;
+	}
+	@media (min-width: 1024px) {
+		align-items: center;
+	}
+}
+
+h1.register {
+	font-size: 48px;
+	font-weight: 800;
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-transform: lowercase;
+	letter-spacing: -0.015em;
+}
+
+.btn-purple {
+	background-color: $color-purple;
+	border-color: $color-purple;
+}

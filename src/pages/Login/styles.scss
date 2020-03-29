@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+
+.login-bg {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+	align-items: flex-start;
+
+	@media (min-width: 1024px) {
+		align-items: center;
+	}
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 800;
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-transform: lowercase;
+	letter-spacing: -0.025em;
+}
+
+.opacity-70 {
+	opacity: 0.7;
+}
+
+.btn-purple {
+	background-color: $color-purple;
+	border-color: $color-purple;
+}
