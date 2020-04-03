@@ -31,9 +31,9 @@ export default function Login() {
 			className='login-bg'
 			style={{ backgroundImage: 'url(' + petHomeImg + ')' }}>
 			<div className='container'>
-				<div className='row align-items-center'>
+				<div className='row align-items-center my-2'>
 					<div className='col-sm-12 col-md-6 col-lg-4'>
-						<h1 className='mt-xs-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0 mb-4 text-primary'>
+						<h1 className='mb-4 text-primary'>
 							Pet<span className='text-info'>Rescue</span>
 						</h1>
 						<form className='mb-4' onSubmit={handleLogin}>

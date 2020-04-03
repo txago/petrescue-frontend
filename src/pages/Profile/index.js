@@ -45,7 +45,7 @@ export default function Profile() {
 	return (
 		<>
 			<nav className='navbar navbar-expand-lg bg-purple navbar-dark'>
-				<Link to={'/'} className='navbar-brand pt-0 mb-0 h1 profile'>
+				<Link to={'/profile'} className='navbar-brand pt-0 mb-0 h1 profile'>
 					Pet<span className='text-info'>Rescue</span>
 				</Link>
 				<button
@@ -80,14 +80,14 @@ export default function Profile() {
 			<div className='container'>
 				<div className='row'>
 					<div className='col-12'>
-						<h1 className='page-title border-bottom my-4'>Pets cadastrados</h1>
+						<h1 className='page-title my-4'>Pets cadastrados</h1>
 					</div>
 				</div>
 				<div className='row'>
 					{incidents.map(incident => (
 						<div
 							key={incident.id}
-							className='col-xs-12 col-sm-6 col-md-4 col-lg-3'>
+							className='col-xs-12 col-sm-6 col-md-6 col-lg-4'>
 							<div className='card mb-4'>
 								<div className='card-body'>
 									<h5 className='card-title'>{incident.title}</h5>
@@ -95,7 +95,7 @@ export default function Profile() {
 									<button
 										onClick={() => handleDeleteIncident(incident.id)}
 										className='btn btn-sm btn-outline-danger'>
-										Remover
+										🗑 Remover
 									</button>
 								</div>
 							</div>

@@ -6,8 +6,8 @@
 	display: flex;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: bottom;
+	background-position: bottom;
+	background-attachment: fixed;
 	align-items: flex-start;
 
 	@media (min-width: 1024px) {

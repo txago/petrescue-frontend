@@ -21,17 +21,13 @@
 	}
 }
 
-h1.incident {
+.incident-title {
 	font-size: 30px;
-	line-height: 30px;
-	font-weight: 800;
-	font-family: 'Montserrat Alternates', sans-serif;
-	text-transform: lowercase;
+	color: $secondary;
 	letter-spacing: -0.015em;
 
 	@media (min-width: 576px) {
 		font-size: 48px;
-		line-height: 48px;
 	}
 }
 
